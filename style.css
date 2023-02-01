@@ -7,3 +7,42 @@
 .auto-dm{
     width: auto;
 }
+.gutter-ticket{
+    gap: 50px;
+}
+.center-text{
+    text-align: center;
+}
+.pad-top-bot{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.back-white{
+    background:white;
+}
+.radius-card-calc{
+    border-radius: 10px;
+}
+.white-tex{
+    color: white;
+}
+.color-text-red{
+    color:rebeccapurple
+}
+.border-black{
+    border: 2px solid rgb(22, 11, 102);
+}
+.margin-botton-ticket{
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding: 0;
+}
+.back-name{
+    background-color: blueviolet;
+}
+.pad-top-card{
+    padding-top: 10px;
+}
+.bold{
+    font-weight: bold;
+}

@@ -8,28 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body class="color-page">
     <main class="color-page">
         <div class="container">
-            <div class="row">
-                        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-                <div class="row" id="calcolare">
-                    <div class="nomecognome">
-                        <h4>
+            <div class="row align-items-center">
+                        <h1 class="center-text white-tex pad-top-card">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <div class="container row justify-content-center back-white radius-card-calc pad-top-card" id="calcolare">
+                    <div class="nomecognome col-auto ">
+                        <h4 class="color-text-red">
                             Nome Cognome
                         </h4>
                         <input type="text" name="width" class="form-control " value="Nome  Cognome" >
 
                     </div>
-                    <div class="km">
-                        <h4>
+                    <div class="km col-auto ">
+                        <h4 class="color-text-red">
                             Km da percorrere
                         </h4>
                         <input  type="text" name="width" class="form-control km-form" value="10" >
 
                     </div>
-                    <div class="eta">
-                        <h4>
+                    <div class="eta col-auto ">
+                        <h4 class="color-text-red">
                             Fascia d'età
                         </h4>
                         <select name="etapasseggero" class="form-control mb" id="">
@@ -41,30 +41,31 @@
                         </select>
 
                     </div>
-                    <div class="row buttons-js">
+                    <div class="row buttons-js justify-content-center gutter-ticket pad-top-bot">
                         <input type="button" class="btn btn-secondary auto-dm gen" value="Genera">
-                        <button class="btn btn-secondary auto-dm" onClick="window.location.reload();">Refresh Page</button>
+                        <button class="btn btn-secondary auto-dm" onClick="window.location.reload();">Annulla</button>
                     </div>
                     
                     
 
                 </div>
-                <h1>IL TUO BIGLIETTO</h1>
-                <div class="row">
-                    <h2>DETTAGLIO PASSEGGERI</h2>
-                    <div class="container row">
-                        <div class="col-auto">
+                <h1 class="center-text white-tex pad-top-card">IL TUO BIGLIETTO</h1>
+                <div class="row container back-white">
+                    <h2 class="col-12">DETTAGLIO PASSEGGERI</h2>
+                    <div class="container row  back-white border-black margin-botton-ticket ">
+                        
+                        <div class="col-auto gutter-ticket back-name">
                             <h2>
                                 NOME PASSEGGERI
 
                             </h2>
-                            <p id="nomepass">
+                            <p id="nomepass" class="bold">
                                 Nome e cognome
 
                             </p>
 
                         </div>
-                        <div class="col-auto d-flex">
+                        <div class="col-auto d-flex gutter-ticket">
                             <div class="col-auto">
                                 <h4>
                                 Offerta
@@ -77,16 +78,16 @@
 
 
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto gutter-ticket">
                                 <h4>
                                     Carrozza
                                 </h4>
-                                <p>
-                                    5
+                                <p id="carnumber">
+                                    
                                 </p>
                                 
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto gutter-ticket">
                                 <h4>
                                     Codice CP
                                 </h4>
@@ -95,7 +96,7 @@
                                 </p>
                                 
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto gutter-ticket">
                                 <h4>
                                     Costo biglietto
                                 </h4>

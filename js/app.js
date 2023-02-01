@@ -47,7 +47,17 @@ formBtnElementGen.addEventListener('click', function () {
     // costo biglietto
     let priceticket = document.getElementById('ticketprice')
     priceticket.innerHTML = KmOfElementdiscount.toFixed(2) + ('€')
-    
+    // GENERAZIONE CARROZZA NUMERO RANDOM
+    let carX = parseInt(Math.random() * 15 ) + 1 ;
+    console.log(carX)
+    let carRandom = document.getElementById('carnumber')
+    carRandom.innerHTML = carX
+    // GENERAZIONE CODICE CP
+    let cpNumber = parseInt(Math.random() * 994239 ) + 1 ;
+    console.log(cpNumber)
+    let cpGen = document.getElementById('Numbercp')
+    cpGen.innerHTML = cpNumber
+
     
 
 	
