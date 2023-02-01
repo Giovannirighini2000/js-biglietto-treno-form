@@ -34,6 +34,23 @@ formBtnElementGen.addEventListener('click', function () {
     priceDiscount = KmOfElement - KmOfElementdiscount 
     console.log(priceDiscount)
 
+    // PRENDIAMO DALLA CONSOLE IL NOME DELL'UTENTE
+
+    let trasfName = formElementName
+    trasfName = formElementName.value
+    console.log(trasfName)
+    // BIGLIETTO PASSEGGERO
+    let nomePass = document.getElementById('nomepass')
+    nomePass.innerHTML = formElementName.value
+    
+    
+    console.log(nomePass)
+    
+    
+
+
 	
 })
+
+
 
