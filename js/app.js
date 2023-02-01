@@ -16,6 +16,23 @@ formBtnElementGen.addEventListener('click', function () {
 	let KmOfElement = formElementkm.value
 	KmOfElement = KmOfElement * pricekm
     console.log(KmOfElement)
+    // METTIAMO L'OPZIONE SCONTO IN BASE ALL'ETA SUL PREZZO STANDARD
+    let sectionage = formElementEta.value
+
+	switch (sectionage) {
+		case 'under-18':
+			KmOfElementdiscount = KmOfElement / 100 * 20
+			break
+		case 'over65':
+			KmOfElementdiscount = KmOfElement / 100 * 40
+			break
+		case 'notdiscount':
+			KmOfElementdiscount = 0
+			break
+	}
+    console.log(KmOfElementdiscount)
+    priceDiscount = KmOfElement - KmOfElementdiscount 
+    console.log(priceDiscount)
 
 	
 })
