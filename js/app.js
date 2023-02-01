@@ -40,14 +40,15 @@ formBtnElementGen.addEventListener('click', function () {
     trasfName = formElementName.value
     console.log(trasfName)
     // BIGLIETTO PASSEGGERO
+    // nome
     let nomePass = document.getElementById('nomepass')
     nomePass.innerHTML = formElementName.value
-    
-    
     console.log(nomePass)
+    // costo biglietto
+    let priceticket = document.getElementById('ticketprice')
+    priceticket.innerHTML = KmOfElementdiscount.toFixed(2) + ('€')
     
     
-
 
 	
 })
