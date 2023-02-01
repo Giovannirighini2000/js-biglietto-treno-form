@@ -27,7 +27,7 @@ formBtnElementGen.addEventListener('click', function () {
 			KmOfElementdiscount = KmOfElement / 100 * 40
 			break
 		case 'notdiscount':
-			KmOfElementdiscount = 0
+			KmOfElementdiscount = KmOfElement - 0
 			break
 	}
     console.log(KmOfElementdiscount)
