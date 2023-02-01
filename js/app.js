@@ -21,10 +21,10 @@ formBtnElementGen.addEventListener('click', function () {
 
 	switch (sectionage) {
 		case 'under-18':
-			KmOfElementdiscount = KmOfElement / 100 * 20
+			KmOfElementdiscount = KmOfElement - KmOfElement / 100 * 20
 			break
 		case 'over65':
-			KmOfElementdiscount = KmOfElement / 100 * 40
+			KmOfElementdiscount = KmOfElement - KmOfElement / 100 * 40
 			break
 		case 'notdiscount':
 			KmOfElementdiscount = KmOfElement - 0
