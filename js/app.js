@@ -8,6 +8,7 @@ console.log(formBtnElementGen,formElementName,formElementkm,formElementEta)
 // prezzo fisso km
 const pricekm = 0.21
 // prezzo in base al KM
+let KmOfElementdiscount
 formBtnElementGen.addEventListener('click', function () {
 	console.log(' calcola il prezzo del biglietto')
 
@@ -31,6 +32,7 @@ formBtnElementGen.addEventListener('click', function () {
 			break
 	}
     console.log(KmOfElementdiscount)
+    let priceDiscount
     priceDiscount = KmOfElement - KmOfElementdiscount 
     console.log(priceDiscount)
 
