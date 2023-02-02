@@ -12,10 +12,11 @@ let KmOfElementdiscount
 formBtnElementGen.addEventListener('click', function () {
 	console.log(' calcola il prezzo del biglietto')
 
-	console.log(formElementkm.value, formElementEta)
+	console.log(parseFloat(formElementkm.value), formElementEta)
 
-	let KmOfElement = formElementkm.value
+	let KmOfElement = parseFloat(formElementkm.value) 
 	KmOfElement = KmOfElement * pricekm
+    KmOfElement = parseFloat(KmOfElement)
     console.log(KmOfElement)
     // METTIAMO L'OPZIONE SCONTO IN BASE ALL'ETA SUL PREZZO STANDARD
     let sectionage = formElementEta.value
